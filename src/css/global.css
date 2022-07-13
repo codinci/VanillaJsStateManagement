@@ -1,7 +1,6 @@
 /**
 *   Define Variables
 */
-
 :root {
     --border: #888888;
     --decor: #777777;
@@ -12,7 +11,7 @@
 }
 
 /**
-*   core styles
+*   Core styles
 */
 html {
     height: 100%;
@@ -51,7 +50,6 @@ h1, h2 {
 /**
 *   Intro
 */
-
 .intro {
     padding: 0 0 1rem 0;
     margin: 0 0 2rem 0;
