@@ -32,7 +32,7 @@ export default class Store {
             set: function(state, key, value) {
                 state[key] = value;
 
-                console.log(`Statechange: ${key} : ${value}`);
+                console.log(`statechange: ${key} : ${value}`);
 
                 //Publish the change event for the components that are listening
                 self.events.publish('statechange', self.state);
@@ -63,7 +63,7 @@ export default class Store {
         //Run a quick check to see if the action actually exists
         //before we try to run it
         if(typeof self.actions[actionKey] !== 'function') {
-            console.error(`Action ${actionKey} doesn't exist`);
+            console.error(`Action "${actionKey} doesn't exist`);
             return false;
         }
 
@@ -96,7 +96,7 @@ export default class Store {
         //Run a quick check to see if this mutation actually exists
         //before trying to run it
         if(typeof self.mutations[mutationKey] !== 'function'){
-            console.log(`Mutation ${mutationKey} doesn't exist`);
+            console.log(`Mutation "${mutationKey}" doesn't exist`);
             return false;
         }
 

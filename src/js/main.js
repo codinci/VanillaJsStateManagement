@@ -1,9 +1,9 @@
 import store from './store/index.js';
 
 //Load up components
-import Count from './components/count.js';
-import List from './components/list.js';
-import Status from './components/status.js';
+import Count from './component/count.js';
+import List from './component/list.js';
+import Status from './component/status.js';
 
 //Load up some DOM elements
 const formElement = document.querySelector('.js-form');

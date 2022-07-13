@@ -11,7 +11,7 @@ export default class Component {
 
         //If there's a store passed subscribe to the state change
         if(props.store instanceof Store){
-            props.store.events.subscribe('Statechange', () => self.render());
+            props.store.events.subscribe('statechange', () => self.render());
         }
 
         //Store the HTML element to attach the render to if set

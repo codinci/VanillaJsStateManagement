@@ -1,7 +1,7 @@
 import Component from "../lib/component.js";
 import store from "../store/index.js";
 
-export class List extends Component {
+export default class List extends Component {
 
     //Pass our store instance and the HTML element up to the parent component
     constructor(){
@@ -28,9 +28,9 @@ export class List extends Component {
         //Loop the items and generate a list of elements
         self.element.innerHTML = `
             <ul class="app__items">
-                ${store.items.state.map(item => {
+                ${store.state.items.map(item => {
                     return `
-                        <li>${item}<button aria-label="Delete this item> x <button></li>
+                        <li>${item}<button aria-label="Delete this item"> x </button></li>
                     `
                 }).join('')}
                 </ul>
